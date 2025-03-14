@@ -1,18 +1,19 @@
-## Getting Started
+# Алгоритм Дейкстры
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Этот код реализует алгоритм Дейкстры для поиска кратчайшего пути в графе от точки `start` до точки `end`. Проект создан в рамках изучения книги **"Грокаем алгоритмы"** (Aditya Bhargava).
 
-## Folder Structure
+## Описание
+Алгоритм Дейкстры используется для нахождения кратчайшего пути в графе с неотрицательными весами ребер. В данном примере граф представлен в виде хэш-таблиц, где:
+- `graph` описывает узлы и их соседей с весами.
+- `cost` хранит текущие стоимости достижения каждого узла.
+- `parents` хранит информацию о родителях узлов для восстановления пути.
 
-The workspace contains two folders by default, where:
+# Dijkstra's Algorithm
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+This code implements Dijkstra's algorithm to find the shortest path in a graph from the `start` node to the `end` node. The project was created as part of studying the book **"Grokking Algorithms"** by Aditya Bhargava.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Description
+Dijkstra's algorithm is used to find the shortest path in a graph with non-negative edge weights. In this example, the graph is represented using hash maps, where:
+- `graph` describes nodes and their neighbors with weights.
+- `cost` stores the current costs to reach each node.
+- `parents` stores information about the parent nodes to reconstruct the path.
