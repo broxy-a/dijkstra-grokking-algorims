@@ -24,7 +24,7 @@ class App {
     // Граф который показывает какой узел чьим родителем является.
     private static HashMap<String, String> parents = new HashMap<>(); 
 
-    // Массив для хранения уже проверенных узлов.
+    // Хеш-таблица для хранения уже проверенных узлов.
     private static Set<String> checked = new HashSet<>();
 
 
